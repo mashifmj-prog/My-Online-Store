@@ -1,4 +1,4 @@
-/* General Styles */
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,44 +8,73 @@ body {
   text-align: center;
 }
 
-/* Header */
 header {
   background: #2c3e50;
   color: white;
-  padding: 1em;
+  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
 }
 
 header nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-  padding: 50px;
+  padding: 60px 20px;
   background: #3498db;
   color: white;
 }
 
-.hero button {
-  padding: 10px 20px;
+.hero h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.hero p {
+  margin: 10px 0 20px;
   font-size: 1.2em;
-  margin-top: 15px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 1.1em;
   background: #e67e22;
   border: none;
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-/* Products */
+.hero button:hover {
+  background: #d35400;
+}
+
+/* Products Section */
 .products {
-  padding: 50px;
+  padding: 50px 20px;
   background: #fff;
+}
+
+.products h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
 .product-card {
@@ -57,6 +86,11 @@ header nav a {
   width: 220px;
   vertical-align: top;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
 }
 
 .product-card img {
@@ -64,9 +98,18 @@ header nav a {
   border-radius: 10px;
 }
 
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
 .product-card .price {
   font-weight: bold;
   color: #27ae60;
+  margin: 10px 0;
 }
 
 .product-card button {
@@ -77,13 +120,23 @@ header nav a {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-/* About Section */
+.product-card button:hover {
+  background: #1e8449;
+}
+
+/* About & Contact Sections */
 .about, .contact {
-  padding: 40px;
+  padding: 40px 20px;
   background: #ecf0f1;
   margin-top: 20px;
+}
+
+.about h2, .contact h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
 }
 
 /* Footer */
@@ -92,4 +145,15 @@ footer {
   color: white;
   padding: 15px;
   margin-top: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .product-card {
+    width: 80%;
+    margin: 15px auto;
+  }
 }
