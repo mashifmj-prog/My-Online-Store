@@ -1,83 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Demo Store</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-<body>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #f9f9f9;
+}
 
-  <header>
-    <h1>My Online Store</h1>
-    <nav>
-      <a href="#products">Products</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <section class="hero">
-    <h2>Welcome to my website</h2>
-    <p>Find amazing products at great prices!</p>
-    <button onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
-  </section>
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
-  <section id="products" class="products">
-    <h2>Our Products</h2>
+.hero {
+  padding: 50px;
+  background: #3498db;
+  color: white;
+}
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Wireless Earbuds">
-      <h3>Wireless Earbuds</h3>
-      <p>High-quality sound with long-lasting battery.</p>
-      <p><strong>$49.99</strong></p>
-      <button>Buy Now</button>
-    </div>
+.hero button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin-top: 15px;
+  background: #e67e22;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Smartwatch">
-      <h3>Smartwatch</h3>
-      <p>Track your fitness and stay connected on the go.</p>
-      <p><strong>$89.99</strong></p>
-      <button>Buy Now</button>
-    </div>
+.products {
+  padding: 50px;
+}
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Bluetooth Speaker">
-      <h3>Bluetooth Speaker</h3>
-      <p>Portable speaker with powerful bass.</p>
-      <p><strong>$39.99</strong></p>
-      <button>Buy Now</button>
-    </div>
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Gaming Mouse">
-      <h3>Gaming Mouse</h3>
-      <p>Ergonomic design with customizable buttons.</p>
-      <p><strong>$29.99</strong></p>
-      <button>Buy Now</button>
-    </div>
-  </section>
+.product-card:hover {
+  transform: scale(1.05);
+}
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are passionate about bringing you quality gadgets at affordable prices. Our mission is to make tech accessible to everyone.</p>
-  </section>
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@myshop.com</p>
-    <p>Phone: +1 234 567 890</p>
-  </section>
+.product-card button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-  <footer>
-    <p>© 2025 My Online Store | All Rights Reserved</p>
-  </footer>
-
-</body>
-</html>
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
