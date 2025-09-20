@@ -3,17 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Demo Store</title>
+  <title>My Online Store</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <h1>My Online Store</h1>
     <nav>
@@ -23,67 +16,66 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h2>Welcome to my website</h2>
-    <p>Find amazing products at great prices!</p>
-    <button onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
+    <h2>Welcome to my store</h2>
+    <p>Find amazing products at unbeatable prices!</p>
+    <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+      Shop Now
+    </button>
   </section>
 
-  <!-- Products Section -->
   <section id="products" class="products">
     <h2>Our Products</h2>
 
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Wireless Earbuds">
-      <h3>Wireless Earbuds</h3>
-      <p>High-quality sound with long-lasting battery.</p>
-      <p><strong>$49.99</strong></p>
+      <img src="https://via.placeholder.com/200x150" alt="Wireless Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>High-quality sound with noise cancellation.</p>
+      <p class="price">$59.99</p>
       <button>Buy Now</button>
     </div>
 
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Smartwatch">
+      <img src="https://via.placeholder.com/200x150" alt="Smartwatch">
       <h3>Smartwatch</h3>
-      <p>Track your fitness and stay connected on the go.</p>
-      <p><strong>$89.99</strong></p>
+      <p>Track your health and stay connected.</p>
+      <p class="price">$129.99</p>
       <button>Buy Now</button>
     </div>
 
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Bluetooth Speaker">
+      <img src="https://via.placeholder.com/200x150" alt="Bluetooth Speaker">
       <h3>Bluetooth Speaker</h3>
-      <p>Portable speaker with powerful bass.</p>
-      <p><strong>$39.99</strong></p>
+      <p>Portable speaker with deep bass.</p>
+      <p class="price">$39.99</p>
       <button>Buy Now</button>
     </div>
 
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Gaming Mouse">
+      <img src="https://via.placeholder.com/200x150" alt="Gaming Mouse">
       <h3>Gaming Mouse</h3>
-      <p>Ergonomic design with customizable buttons.</p>
-      <p><strong>$29.99</strong></p>
+      <p>Precision and speed for pro gamers.</p>
+      <p class="price">$49.99</p>
       <button>Buy Now</button>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
+  <section id="about" class="about">
     <h2>About Us</h2>
-    <p>We are passionate about bringing you quality gadgets at affordable prices. Our mission is to make tech accessible to everyone.</p>
+    <p>
+      We provide high-quality electronics at affordable prices. 
+      Our mission is to make technology accessible and enjoyable for everyone.
+    </p>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Email: info@myshop.com</p>
-    <p>Phone: +1 234 567 890</p>
+    <p>Phone: +27 123 456 789</p>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 My Online Store | All Rights Reserved</p>
   </footer>
-
 </body>
 </html>
